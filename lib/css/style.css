@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 0, 0);
+}
+.intro h2 {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-74%, -50%);
+  font-size: 104px;
+  max-width: 44%;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+section {
+  height: 100vh;
+  color: black;
+}
+
+section h1 {
+  padding-top: 300px;
+  text-align: center;
+  font-size: 80px;
+}
