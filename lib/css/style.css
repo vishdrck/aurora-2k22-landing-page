@@ -25,7 +25,7 @@ body {
   transform: translate(-50%, -50%);
   font-size: 80px;
   font-family: "Montserrat", sans-serif;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .intro h2 {
   position: absolute;
@@ -35,7 +35,7 @@ body {
   font-size: 104px;
   max-width: 44%;
   font-family: "Montserrat", sans-serif;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 section {
