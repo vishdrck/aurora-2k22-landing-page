@@ -33,11 +33,10 @@ body {
 }
 .intro h2 {
   position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-74%, -50%);
-  font-size: 104px;
-  max-width: 44%;
+  top: 40%;
+  left: 24%;
+  font-size: 80px;
+  max-width: 100%;
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
 }
