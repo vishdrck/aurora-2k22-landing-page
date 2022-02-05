@@ -101,3 +101,22 @@ section h1 {
   background-position: center;
   margin: -100px 0 0 -100px;
 }
+
+.second-section-text-common {
+  position: absolute;
+  font-size: 11vw;
+  color: white;
+  text-transform: uppercase;
+  min-width: 100%;
+}
+
+#section-section-text1 {
+   opacity: 1;
+   width: '62%';
+   left: '39%'
+}
+
+#second-section-text2 {
+  left: 100%;
+  top: 65%;
+}
