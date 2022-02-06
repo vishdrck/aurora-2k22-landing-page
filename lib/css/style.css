@@ -7,7 +7,7 @@
 
 body {
   font-family: sans-serif;
-  overflow: hidden;
+  overflow-x: hidden !important;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -111,12 +111,48 @@ section h1 {
 }
 
 #section-section-text1 {
-   opacity: 1;
-   width: '62%';
-   left: '39%'
+  opacity: 1;
+  width: "62%";
+  left: "39%";
 }
 
 #second-section-text2 {
   left: 100%;
   top: 65%;
+}
+
+.header {
+  padding: 10px 16px;
+  backdrop-filter: saturate(180%) blur(2px);
+  display: flex;
+  justify-content: center;
+}
+.mix-blend {
+  mix-blend-mode: difference;
+}
+
+.header-text {
+  font-size: 1.5rem;
+  margin-left: 150px;
+}
+.text-white {
+  color: white;
+}
+.text-black {
+  color: black;
+}
+.content {
+  padding-top: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 5vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
