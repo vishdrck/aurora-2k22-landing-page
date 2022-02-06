@@ -10,10 +10,27 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="lib/css/music.css" />
     <link rel="stylesheet" href="lib/css/style.css" />
     <title>Aurora Conference 2022 Powered by EchonLabs Private Limited</title>
   </head>
   <body>
+    <div class="music">
+      <audio id="myAudio" autoplay loop>
+        <source src="assets/4.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="myAudioTrigger">
+        <source src="assets/Beep_Low_10.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="sound-vis sound-vis--small audio-paused">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+      <!-- <div class="state playing"></div> -->
+    </div>
     <div id="preloader">
       <div id="status">&nbsp;</div>
     </div>
@@ -88,6 +105,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="lib/js/preloader.js"></script>
+    <script src="lib/js/music.js"></script>
     <script src="lib/js/app2.js"></script>
   </body>
 </html>

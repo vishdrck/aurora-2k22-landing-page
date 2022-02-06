@@ -1,0 +1,407 @@
+.music {
+  border-radius: 100%;
+  border: 2px solid white;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+  background-color: black;
+  z-index: 999;
+}
+.music:hover {
+  cursor: pointer;
+  background-color: #464646;
+}
+
+.state {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.1em;
+  font-weight: 200;
+  line-height: 2;
+  animation: idle 1s linear infinite alternate;
+}
+.state.playing:before {
+  content: "► playing";
+}
+.state.paused:before {
+  content: "❚❚ paused";
+}
+.sound-vis {
+  position: relative;
+  height: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.sound-vis--small {
+  width: 100%;
+  height: 50%;
+}
+.sound-vis--small i {
+  width: 1px;
+}
+.sound-vis--large {
+  width: 70px;
+  height: 35px;
+}
+.sound-vis--large i {
+  width: 5px;
+  background-color: transparent !important;
+  border: 1px solid #fff;
+  border-bottom: none;
+  border-radius: 2.5px 2.5px 0 0;
+}
+.sound-vis.audio-playing i {
+  transition: 600ms ease-in-out all;
+  height: 10%;
+}
+.sound-vis.audio-playing i:nth-child(1) {
+  animation: playing-1 5s linear infinite alternate;
+}
+.sound-vis.audio-playing i:nth-child(2) {
+  animation: playing-2 5s linear infinite alternate;
+}
+.sound-vis.audio-playing i:nth-child(3) {
+  animation: playing-3 5s linear infinite alternate;
+}
+.sound-vis.audio-playing i:nth-child(4) {
+  animation: playing-4 5s linear infinite alternate;
+}
+.sound-vis.audio-playing i:nth-child(5) {
+  animation: playing-5 5s linear infinite alternate;
+}
+.sound-vis.audio-paused i {
+  height: 10%;
+  transition: 600ms ease-in-out all;
+}
+.sound-vis i {
+  display: inline-block;
+  background-color: #fff;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 4px;
+  transition: 600ms ease-in-out all;
+}
+
+@keyframes playing-1 {
+  5% {
+    height: 46%;
+  }
+  10% {
+    height: 58%;
+  }
+  15% {
+    height: 83%;
+  }
+  20% {
+    height: 99%;
+  }
+  25% {
+    height: 2%;
+  }
+  30% {
+    height: 34%;
+  }
+  35% {
+    height: 25%;
+  }
+  40% {
+    height: 52%;
+  }
+  45% {
+    height: 48%;
+  }
+  50% {
+    height: 96%;
+  }
+  55% {
+    height: 85%;
+  }
+  60% {
+    height: 54%;
+  }
+  65% {
+    height: 15%;
+  }
+  70% {
+    height: 55%;
+  }
+  75% {
+    height: 77%;
+  }
+  80% {
+    height: 15%;
+  }
+  85% {
+    height: 44%;
+  }
+  90% {
+    height: 24%;
+  }
+  95% {
+    height: 75%;
+  }
+  100% {
+    height: 33%;
+  }
+}
+@keyframes playing-2 {
+  5% {
+    height: 93%;
+  }
+  10% {
+    height: 37%;
+  }
+  15% {
+    height: 26%;
+  }
+  20% {
+    height: 66%;
+  }
+  25% {
+    height: 34%;
+  }
+  30% {
+    height: 74%;
+  }
+  35% {
+    height: 51%;
+  }
+  40% {
+    height: 44%;
+  }
+  45% {
+    height: 23%;
+  }
+  50% {
+    height: 95%;
+  }
+  55% {
+    height: 31%;
+  }
+  60% {
+    height: 31%;
+  }
+  65% {
+    height: 30%;
+  }
+  70% {
+    height: 87%;
+  }
+  75% {
+    height: 66%;
+  }
+  80% {
+    height: 45%;
+  }
+  85% {
+    height: 100%;
+  }
+  90% {
+    height: 47%;
+  }
+  95% {
+    height: 93%;
+  }
+  100% {
+    height: 21%;
+  }
+}
+@keyframes playing-3 {
+  5% {
+    height: 20%;
+  }
+  10% {
+    height: 11%;
+  }
+  15% {
+    height: 92%;
+  }
+  20% {
+    height: 69%;
+  }
+  25% {
+    height: 55%;
+  }
+  30% {
+    height: 32%;
+  }
+  35% {
+    height: 4%;
+  }
+  40% {
+    height: 2%;
+  }
+  45% {
+    height: 40%;
+  }
+  50% {
+    height: 53%;
+  }
+  55% {
+    height: 92%;
+  }
+  60% {
+    height: 88%;
+  }
+  65% {
+    height: 98%;
+  }
+  70% {
+    height: 82%;
+  }
+  75% {
+    height: 67%;
+  }
+  80% {
+    height: 28%;
+  }
+  85% {
+    height: 84%;
+  }
+  90% {
+    height: 16%;
+  }
+  95% {
+    height: 9%;
+  }
+  100% {
+    height: 91%;
+  }
+}
+@keyframes playing-4 {
+  5% {
+    height: 24%;
+  }
+  10% {
+    height: 3%;
+  }
+  15% {
+    height: 96%;
+  }
+  20% {
+    height: 53%;
+  }
+  25% {
+    height: 89%;
+  }
+  30% {
+    height: 90%;
+  }
+  35% {
+    height: 46%;
+  }
+  40% {
+    height: 27%;
+  }
+  45% {
+    height: 64%;
+  }
+  50% {
+    height: 95%;
+  }
+  55% {
+    height: 67%;
+  }
+  60% {
+    height: 45%;
+  }
+  65% {
+    height: 43%;
+  }
+  70% {
+    height: 86%;
+  }
+  75% {
+    height: 56%;
+  }
+  80% {
+    height: 69%;
+  }
+  85% {
+    height: 80%;
+  }
+  90% {
+    height: 85%;
+  }
+  95% {
+    height: 37%;
+  }
+  100% {
+    height: 68%;
+  }
+}
+@keyframes playing-5 {
+  5% {
+    height: 62%;
+  }
+  10% {
+    height: 54%;
+  }
+  15% {
+    height: 99%;
+  }
+  20% {
+    height: 95%;
+  }
+  25% {
+    height: 45%;
+  }
+  30% {
+    height: 42%;
+  }
+  35% {
+    height: 11%;
+  }
+  40% {
+    height: 41%;
+  }
+  45% {
+    height: 30%;
+  }
+  50% {
+    height: 36%;
+  }
+  55% {
+    height: 39%;
+  }
+  60% {
+    height: 29%;
+  }
+  65% {
+    height: 70%;
+  }
+  70% {
+    height: 58%;
+  }
+  75% {
+    height: 86%;
+  }
+  80% {
+    height: 39%;
+  }
+  85% {
+    height: 1%;
+  }
+  90% {
+    height: 21%;
+  }
+  95% {
+    height: 56%;
+  }
+  100% {
+    height: 69%;
+  }
+}
+@keyframes idle {
+  to {
+    opacity: 0.3;
+  }
+}
