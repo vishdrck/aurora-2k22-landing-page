@@ -10,21 +10,78 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="lib/css/music.css" />
     <link rel="stylesheet" href="lib/css/style.css" />
     <title>Aurora Conference 2022 Powered by EchonLabs Private Limited</title>
   </head>
   <body>
+    <div class="music">
+      <audio id="myAudio" autoplay loop>
+        <source src="assets/4.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="myAudioTrigger">
+        <source src="assets/Beep_Low_10.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="sound-vis sound-vis--small audio-paused">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+      <!-- <div class="state playing"></div> -->
+    </div>
     <div id="preloader">
       <div id="status">&nbsp;</div>
     </div>
     <div class="intro6 videoLayer">
       <video autoplay playsinline muted preload src="assets/intro.mp4"></video>
     </div>
+<<<<<<< HEAD
 
     <div class="header text-black mix-blend" id="page-header">
       <h2 class="header-text">Home</h2>
       <h2 class="header-text">About</h2>
       <h2 class="header-text">Contact</h2>
+=======
+    <div class="intro videoLayer" id="second-section">
+      <h1 id="second-section-text1">TO BE INDUSTRIALIZED OVER TRADITION</h1>
+      <span class="second-section-text-common" id="second-section-text2"
+        >Aurora 2022 <br />
+        <span class="second-section-text-common_sub">
+          Organized by Society of Computer Science</span
+        >
+      </span>
+      <video preload src="assets/laptop.mp4"></video>
+    </div>
+
+    <div class="intro5 videoLayer" id="third-section">
+      <h1>Conference consists of top experts in the industry</h1>
+      <video preload src="assets/conference_1.mp4"></video>
+    </div>
+    <div class="intro4 videoLayer" id="fourth-section">
+      <h1>Competitiveness that outweights each other</h1>
+      <video preload src="assets/competition_1.mp4"></video>
+      <div class="blackGradient2"></div>
+    </div>
+    <div class="intro2 videoLayer" id="fifth-section">
+      <h1 id="fifth-section-text1">Swags are ready to be yours!</h1>
+      <h2 class="options option1" id="fifth-section-text2">
+        <span>KEYBOARDS AND MOUSES</span><br />
+        <span>PEN DRIVES</span><br />
+        <span>SWAG BAGS</span><br />
+        <span>BOTTLES</span><br />
+        <span>MUGS</span>
+      </h2>
+      <video preload src="assets/swags.mp4"></video>
+    </div>
+    <div class="intro3 videoLayer" id="sixth-section">
+      <div class="gradient"></div>
+      <h1 id="fifth-section-text1">
+        Victorious champs of the rival competitions
+      </h1>
+      <video preload src="assets/awardshow2.mp4"></video>
+>>>>>>> aec421681e5f79fc3c1675f1128e1d70a3df1af3
     </div>
 
     <div class="content">
@@ -88,6 +145,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="lib/js/preloader.js"></script>
+    <script src="lib/js/music.js"></script>
     <script src="lib/js/app2.js"></script>
   </body>
 </html>
