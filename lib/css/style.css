@@ -6,12 +6,9 @@
 }
 
 body {
-<<<<<<< HEAD
   font-family: sans-serif;
   overflow-x: hidden !important;
-=======
-  overflow: overlay;
->>>>>>> aec421681e5f79fc3c1675f1128e1d70a3df1af3
+  background: white;
 }
 
 ::-webkit-scrollbar {
@@ -160,11 +157,7 @@ body {
 #section-section-text1 {
   opacity: 1;
   width: "62%";
-<<<<<<< HEAD
-  left: "39%";
-=======
   left: "30%";
->>>>>>> aec421681e5f79fc3c1675f1128e1d70a3df1af3
 }
 
 #second-section-text2 {
@@ -184,7 +177,8 @@ body {
 
 .header-text {
   font-size: 1.5rem;
-  margin-left: 150px;
+  margin-left: 75px;
+  margin-right: 75px;
 }
 .text-white {
   color: white;
