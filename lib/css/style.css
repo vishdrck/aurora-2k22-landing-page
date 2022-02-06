@@ -6,16 +6,29 @@
 }
 
 body {
-  font-family: sans-serif;
-  overflow: hidden;
+  overflow: overlay;
 }
+
 ::-webkit-scrollbar {
-  display: none;
+  width: 4px;
+  background: transparent;
+}
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(#1f2c98, #2097dc);
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#e93a36, #eb8733);
+  border-radius: 10px;
+  height: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(#eb8733, #e93a36);
 }
 
 .videoLayer {
   height: 100vh;
   width: 100% !important;
+  overflow: hidden;
 }
 
 .videoLayer video {
@@ -49,20 +62,45 @@ body {
   bottom: 0;
 }
 
-.intro3 {
+.intro2 h1 {
+  color: white;
+  top: 30%;
+  left: 37%;
+  max-width: 58%;
+  text-transform: uppercase;
+  opacity: 0;
+}
+.intro2 h2 {
+  opacity: 0;
+}
+.intro3 h1 {
   position: absolute;
-  width: 100%;
-}
-
-section {
-  height: 100vh;
-  color: black;
-}
-
-section h1 {
-  padding-top: 300px;
+  top: 20%;
+  z-index: 999;
+  /* left: 25%; */
+  font-size: 4rem;
+  min-width: 100%;
+  color: white;
   text-align: center;
-  font-size: 80px;
+  text-transform: uppercase;
+}
+.intro4 h1 {
+  position: absolute;
+  top: 45%;
+  z-index: 999;
+  left: 75%;
+  max-width: 25%;
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.intro5 h1 {
+  color: white;
+  top: 45%;
+  font-size: 3rem;
+  left: 80%;
+  max-width: 30%;
+  text-transform: uppercase;
 }
 
 .options {
@@ -104,19 +142,23 @@ section h1 {
 
 .second-section-text-common {
   position: absolute;
-  font-size: 11vw;
+  font-size: 6vw;
   color: white;
   text-transform: uppercase;
   min-width: 100%;
+  text-align: center;
+  line-height: 1.5em;
 }
-
+.second-section-text-common_sub {
+  font-size: 2rem;
+}
 #section-section-text1 {
-   opacity: 1;
-   width: '62%';
-   left: '39%'
+  opacity: 1;
+  width: "62%";
+  left: "30%";
 }
 
 #second-section-text2 {
   left: 100%;
-  top: 65%;
+  top: 35%;
 }
