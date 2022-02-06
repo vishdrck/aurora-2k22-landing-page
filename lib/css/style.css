@@ -170,6 +170,7 @@ body {
   backdrop-filter: saturate(180%) blur(2px);
   display: flex;
   justify-content: center;
+  visibility: hidden;
 }
 .mix-blend {
   mix-blend-mode: difference;
@@ -196,6 +197,7 @@ body {
   z-index: 1000;
   height: 5vh;
   background: rgba(0, 0, 0, 0.5);
+  visibility: visible;
 }
 
 .sticky + .content {
