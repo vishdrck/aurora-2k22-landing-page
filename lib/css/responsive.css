@@ -1,0 +1,21 @@
+/* Register now section */
+
+@media screen and (max-width: 1024px) {
+  .timer_right h1 {
+    font-size: 4em;
+    padding-bottom: 5px;
+  }
+
+  .timer {
+      height: 123vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .timer_left {
+        width: 35%
+    }
+    .timer_right {
+        width: 65%;
+    }
+}
