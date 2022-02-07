@@ -308,19 +308,6 @@ li span {
   font-size: 2.5rem;
 }
 
-@media all and (max-width: 768px) {
-  h1 {
-    font-size: calc(1.5rem * var(--smaller));
-  }
-
-  li {
-    font-size: calc(1.125rem * var(--smaller));
-  }
-
-  li span {
-    font-size: calc(3.375rem * var(--smaller));
-  }
-}
 
 /* Footer */
 .footer {
@@ -332,7 +319,6 @@ li span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .widget {
@@ -354,12 +340,15 @@ li span {
 
 .footer .branding {
   font-size: larger;
-  letter-spacing: 3.5px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
 }
 
 .footer .address {
-  font-size: 11px;
-  margin-top: 8px;
+  font-size: 13px;
+  margin-top: 0px;
+  color: #ababab;
+  font-weight: 300;
 }
 
 .footer .title {
@@ -380,8 +369,17 @@ li span {
 
 .footer .follow-links {
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 .footer .follow-links a {
   color: white;
   margin: 20px;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
 }
