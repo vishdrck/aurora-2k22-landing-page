@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 html {
@@ -31,7 +31,6 @@ body {
   background-image: linear-gradient(#eb8733, #e93a36);
 }
 
-
 /* intro section */
 #intro-section {
   height: 100vh;
@@ -59,6 +58,7 @@ body {
 .timer_right h1 {
   font-size: 5em;
   padding-bottom: 5px;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.84);
 }
 .timer_right p {
   padding-left: 3px;
@@ -66,8 +66,16 @@ body {
   font-size: 1.5em;
   text-transform: none;
   color: rgb(61, 61, 61);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.84);
+}
+
+/* Laptop showcase section */
+#laptop-showcase-section-text1 {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.84);
 }
 
 .videoLayer {
@@ -107,20 +115,22 @@ body {
   bottom: 0;
 }
 
-.intro2 h1 {
+.swags-section h1 {
   color: white;
   top: 30%;
   left: 37%;
   max-width: 58%;
   text-transform: uppercase;
   opacity: 0;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.84);
+  font-weight: 900;
 }
-.intro2 h2 {
+.swags-section h2 {
   opacity: 0;
 }
-.intro3 h1 {
+.awards-section h1 {
   position: absolute;
-  top: 20%;
+  top: 27%;
   z-index: 999;
   /* left: 25%; */
   font-size: 4rem;
@@ -128,37 +138,44 @@ body {
   color: white;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.84);
 }
-.intro4 h1 {
+.competition-section h1 {
   position: absolute;
   top: 45%;
   z-index: 999;
   left: 75%;
-  max-width: 25%;
+  /* max-width: 25%; */
   color: white;
   font-size: 3rem;
   text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.84);
 }
-.intro5 h1 {
+.conference-section h1 {
   color: white;
   top: 45%;
   font-size: 3rem;
   left: 80%;
   max-width: 30%;
   text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.84);
 }
 
 .options {
   position: absolute;
   z-index: 999;
   transform: translate(-50%, -50%);
-  font-size: 35px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
   color: white;
 }
 .option1 {
   top: 65%;
-  left: 27%;
+  left: 23%;
 }
 
 /* Preloader */
@@ -205,6 +222,7 @@ body {
 
 #second-section-text2 {
   left: 100%;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.84);
   top: 35%;
 }
 
@@ -220,9 +238,10 @@ body {
 }
 
 .header-text {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-left: 75px;
   margin-right: 75px;
+  margin-top: 10px;
 }
 .text-white {
   color: white;
@@ -231,14 +250,14 @@ body {
   color: black;
 }
 .content {
-  padding-top: 16px;
+  /* padding-top: 16px; */
 }
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  height: 5vh;
+  height: 62px;
   background: rgba(0, 0, 0, 0.5);
   visibility: visible;
 }
@@ -246,7 +265,6 @@ body {
 .sticky + .content {
   padding-top: 102px;
 }
-
 
 .button {
   border: none;
@@ -302,4 +320,68 @@ li span {
   li span {
     font-size: calc(3.375rem * var(--smaller));
   }
+}
+
+/* Footer */
+.footer {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget {
+  flex: 0 32%;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+.footer .logo img {
+  filter: invert(1) brightness(100);
+  margin-bottom: 10px;
+}
+
+.footer .widget .widget-1 {
+  margin-left: 100px;
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer .branding {
+  font-size: larger;
+  letter-spacing: 3.5px;
+}
+
+.footer .address {
+  font-size: 11px;
+  margin-top: 8px;
+}
+
+.footer .title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer .description {
+  font-size: 13px;
+  text-align: justify;
+  margin-top: 14px;
+  letter-spacing: normal;
+}
+
+.footer .widget-3 {
+  text-align: center;
+}
+
+.footer .follow-links {
+  margin-top: 40px;
+}
+.footer .follow-links a {
+  color: white;
+  margin: 20px;
 }

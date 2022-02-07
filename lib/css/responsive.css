@@ -1,4 +1,8 @@
-/* Register now section */
+@media screen and (max-width: 1440px) {
+  #laptop-showcase-section-text1 {
+    font-size: 4em;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .timer_right h1 {
@@ -7,15 +11,23 @@
   }
 
   .timer {
-      height: 123vh;
+    height: 123vh;
   }
 }
 
 @media screen and (max-width: 768px) {
-    .timer_left {
-        width: 35%
-    }
-    .timer_right {
-        width: 65%;
-    }
+  .timer_left {
+    width: 35%;
+  }
+  .timer_right {
+    width: 65%;
+  }
+
+  .footer .widget .widget-1 {
+    margin-left: 2px;
+  }
+
+  .footer .follow-links a {
+    margin: 7px;
+  }
 }
