@@ -15,100 +15,117 @@
 </head>
 
 <body>
-  <div class="music">
-    <audio id="myAudio" autoplay loop>
-      <source src="assets/4.mp3" type="audio/mpeg" />
-    </audio>
-    <audio id="myAudioTrigger">
-      <source src="assets/Beep_Low_10.mp3" type="audio/mpeg" />
-    </audio>
-    <div class="sound-vis sound-vis--small audio-paused">
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-    </div>
-    <!-- <div class="state playing"></div> -->
-  </div>
-  <div id="preloader">
-    <div id="status">&nbsp;</div>
-  </div>
-  <div class="intro6 videoLayer" id="intro-section">
-    <video autoplay playsinline muted preload src="assets/intro.mp4"></video>
-    <div class="scroll-down">
-      <a id="scrollInto" href="#register-now-section"><span></span>Scroll</a>
-    </div>
-  </div>
-
-  <div class="header text-white mix-blend" id="page-header">
-    <h2 class="header-text">Home</h2>
-    <h2 class="header-text">About</h2>
-    <h2 class="header-text">Contact</h2>
-  </div>
-  <section id="register-now-section">
-    <div class="timer">
-      <div class="timer_left">
-        <video autoplay loop muted preload src="assets/timer.mp4"></video>
+  <div class="content-wrapper">
+    <!-- Music Toggler -->
+    <div class="music">
+      <audio id="myAudio" autoplay loop>
+        <source src="assets/4.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="myAudioTrigger">
+        <source src="assets/Beep_Low_10.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="sound-vis sound-vis--small audio-paused">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
       </div>
-      <div class="timer_right">
-        <div class="container">
-          <div id="countdown">
-            <ul>
-              <li><span id="days"></span>days</li>
-              <li><span id="hours"></span>Hours</li>
-              <li><span id="minutes"></span>Minutes</li>
-              <li><span id="seconds"></span>Seconds</li>
-            </ul>
-          </div>
+    </div>
+    <!-- End Music Toggler -->
+
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Intro Section -->
+    <section id="intro-section">
+      <div class="intro6 videoLayer" id="intro-section">
+        <video autoplay playsinline muted preload src="assets/intro.mp4"></video>
+        <div class="scroll-down">
+          <a id="scrollInto" href="#register-now-section"><span></span>Scroll</a>
         </div>
-        <h1>Register Now</h1>
-        <p>Hurry up before its too late get yourself registered now!</p>
-        <a href="#">
-          <div class="button button3">Register</div>
-        </a>
+      </div>
+    </section>
+    <!-- End Intro Section -->
+
+    <!-- Main Menu Section -->
+    <div class="header text-white mix-blend" id="page-header">
+      <h2 class="header-text">Home</h2>
+      <h2 class="header-text">About</h2>
+      <h2 class="header-text">Contact</h2>
+    </div>
+    <!-- End Main Menu Section -->
+
+    <!-- Register Now Section -->
+    <section id="register-now-section">
+      <div class="timer">
+        <div class="timer_left">
+          <video autoplay loop muted preload src="assets/timer.mp4"></video>
+        </div>
+        <div class="timer_right">
+          <div class="container">
+            <div id="countdown">
+              <ul>
+                <li><span id="days"></span>days</li>
+                <li><span id="hours"></span>Hours</li>
+                <li><span id="minutes"></span>Minutes</li>
+                <li><span id="seconds"></span>Seconds</li>
+              </ul>
+            </div>
+          </div>
+          <h1>Register Now</h1>
+          <p>Hurry up before its too late get yourself registered now!</p>
+          <a href="#">
+            <div class="button button3">Register</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Register Now Section -->
+
+    <div class="content">
+      <div class="intro videoLayer" id="second-section">
+        <h1 id="second-section-text1">TO BE INDUSTRIALIZED OVER TRADITION</h1>
+        <span class="second-section-text-common" id="second-section-text2">Aurora 2022 <br />
+          <span class="second-section-text-common_sub">
+            Organized by Society of Computer Science</span>
+        </span>
+        <video preload src="assets/laptop.mp4"></video>
+      </div>
+
+      <div class="intro5 videoLayer" id="third-section">
+        <h1>Conference consists of top experts in the industry</h1>
+        <video preload src="assets/conference_1.mp4"></video>
+      </div>
+      <div class="intro4 videoLayer" id="fourth-section">
+        <h1>Competitiveness that outweights each other</h1>
+        <video preload src="assets/competition_1.mp4"></video>
+        <div class="blackGradient2"></div>
+      </div>
+      <div class="intro2 videoLayer" id="fifth-section">
+        <h1 id="fifth-section-text1">Swags are ready to be yours!</h1>
+        <h2 class="options option1" id="fifth-section-text2">
+          <span>KEYBOARDS AND MOUSES</span><br />
+          <span>PEN DRIVES</span><br />
+          <span>SWAG BAGS</span><br />
+          <span>BOTTLES</span><br />
+          <span>MUGS</span>
+        </h2>
+        <video preload src="assets/swags.mp4"></video>
+      </div>
+      <div class="intro3 videoLayer" id="sixth-section">
+        <div class="gradient"></div>
+        <h1 id="fifth-section-text1">
+          Victorious champs of the rival competitions
+        </h1>
+        <video preload src="assets/awardshow2.mp4"></video>
       </div>
     </div>
-  </section>
 
-
-  <div class="content">
-    <div class="intro videoLayer" id="second-section">
-      <h1 id="second-section-text1">TO BE INDUSTRIALIZED OVER TRADITION</h1>
-      <span class="second-section-text-common" id="second-section-text2">Aurora 2022 <br />
-        <span class="second-section-text-common_sub">
-          Organized by Society of Computer Science</span>
-      </span>
-      <video preload src="assets/laptop.mp4"></video>
-    </div>
-
-    <div class="intro5 videoLayer" id="third-section">
-      <h1>Conference consists of top experts in the industry</h1>
-      <video preload src="assets/conference_1.mp4"></video>
-    </div>
-    <div class="intro4 videoLayer" id="fourth-section">
-      <h1>Competitiveness that outweights each other</h1>
-      <video preload src="assets/competition_1.mp4"></video>
-      <div class="blackGradient2"></div>
-    </div>
-    <div class="intro2 videoLayer" id="fifth-section">
-      <h1 id="fifth-section-text1">Swags are ready to be yours!</h1>
-      <h2 class="options option1" id="fifth-section-text2">
-        <span>KEYBOARDS AND MOUSES</span><br />
-        <span>PEN DRIVES</span><br />
-        <span>SWAG BAGS</span><br />
-        <span>BOTTLES</span><br />
-        <span>MUGS</span>
-      </h2>
-      <video preload src="assets/swags.mp4"></video>
-    </div>
-    <div class="intro3 videoLayer" id="sixth-section">
-      <div class="gradient"></div>
-      <h1 id="fifth-section-text1">
-        Victorious champs of the rival competitions
-      </h1>
-      <video preload src="assets/awardshow2.mp4"></video>
-    </div>
   </div>
   <!-- jQuery Plugin -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
@@ -123,6 +140,7 @@
     integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
     integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="lib/js/util.js"></script>
   <script src="lib/js/animations.js"></script>
   <script src="lib/js/preloader.js"></script>
   <script src="lib/js/countdown.js"></script>
