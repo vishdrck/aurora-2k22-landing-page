@@ -60,10 +60,10 @@
       <!-- Music Toggler -->
       <div class="music">
         <audio id="myAudio" loop>
-          <source style="pointer-events: none;" src="assets/4.mp3" type="audio/mpeg" />
+          <source style="pointer-events: none;" src="assets/4.ogg" type="audio/ogg" />
         </audio>
         <audio id="myAudioTrigger">
-          <source src="assets/Beep_Low_10.mp3" type="audio/mpeg" />
+          <source src="assets/Beep_Low_10.ogg" type="audio/ogg" />
         </audio>
         <div class="sound-vis sound-vis--small audio-paused">
           <i></i>
@@ -78,7 +78,7 @@
       <!-- Intro Section -->
       <section id="intro-section">
         <div class="intro-section videoLayer" id="intro-section">
-          <video style="pointer-events: none;" id="intro-video" autoplay playsinline muted preload src="assets/intro.mp4"></video>
+          <video id="intro-video-desktop-section" style="pointer-events: none;" autoplay playsinline muted preload></video>
           <div class="scroll-down">
             <a id="scrollInto" href="#register-now-section"><span></span></a>
           </div>
@@ -173,22 +173,6 @@
 
   </div>
   <div class="mobile content-wrapper">
-
-          <div class="music-mobile">
-            <audio id="myAudio-mobile" loop>
-              <source style="pointer-events: none;" src="assets/4.mp3" type="audio/mpeg" />
-            </audio>
-            <audio id="myAudioTrigger-mobile">
-              <source src="assets/Beep_Low_10.mp3" type="audio/mpeg" />
-            </audio>
-            <div class="sound-vis sound-vis--small audio-paused">
-              <i></i>
-              <i></i>
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-          </div>
     <!-- Intro Section -->
     <section id="intro-section">
       <div class="intro-section videoLayer" id="intro-section">
@@ -345,12 +329,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
     integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
 
-  <script async src="lib/js/animations.js"></script>
-  <script async src="lib/js/preloader.js"></script>
-  <script async src="lib/js/countdown.js"></script>
-  <script async src="lib/js/music.js"></script>
-  <script async src="lib/js/app2.js"></script>
-  <script async src="lib/js/util.js"></script>
+  <script  src="lib/js/animations.js"></script>
+  <script  src="lib/js/preloader.js"></script>
+  <script  src="lib/js/music.js"></script>
+  <script  src="lib/js/app2.js"></script>
+  <script  src="lib/js/util.js"></script>
+  <script  src="lib/js/countdown.js"></script>
 </body>
 
 </html>
