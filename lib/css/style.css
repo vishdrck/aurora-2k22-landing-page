@@ -227,6 +227,7 @@ body {
 }
 
 .header {
+
   padding: 10px 16px;
   /* backdrop-filter: saturate(180%) blur(2px); */
   display: flex;
@@ -234,6 +235,14 @@ body {
   justify-content: center;
   visibility: hidden;
   text-transform: uppercase;
+  top: 45%;
+  left: 0%;
+  width: 100%;
+  z-index: 9999;
+  height: 62px;
+  /* background: rgba(0, 0, 0, 0.5); */
+  position: absolute;
+
 }
 .mix-blend {
   mix-blend-mode: difference;
@@ -253,23 +262,24 @@ body {
   /* margin-right: 75px; */
   /* margin-top: 10px; */
   /* padding: 20px; */
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   margin: 10px;
   width: 100px;
   height: 50px;
   text-align: center;
 }
-.tooltiptext{
+.tooltiptext {
   position: absolute;
   font-size: 15px;
   left: 2%;
-  opacity:0;
+  opacity: 0;
   transition: 0.3s ease-in-out;
 }
-.header-text:hover .tooltiptext{
-  left: 5%;opacity:1;
-  cursor:pointer;
+.header-text:hover .tooltiptext {
+  left: 5%;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .text-white {
@@ -283,14 +293,7 @@ body {
 }
 .sticky {
   position: fixed;
-  top: 45%;
-  left: 0%;
-  width: 100%;
-  z-index: 9999;
-  height: 62px;
-  /* background: rgba(0, 0, 0, 0.5); */
   visibility: visible;
-
 }
 
 .sticky + .content {
@@ -307,6 +310,7 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 10px;
 }
 .button3 {
   background-image: linear-gradient(#e93a36, #eb8733);
@@ -320,7 +324,7 @@ body {
   margin: 0 auto;
   text-align: center;
   background-color: rgb(228, 228, 228);
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -413,4 +417,3 @@ li span {
 .desktop {
   display: block;
 }
-
