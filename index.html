@@ -29,7 +29,7 @@
       <!-- Music Toggler -->
       <div class="music">
         <audio id="myAudio" autoplay loop>
-          <source src="assets/4.mp3" type="audio/mpeg" />
+          <!-- <source src="assets/4.mp3" type="audio/mpeg" /> -->
         </audio>
         <audio id="myAudioTrigger">
           <source src="assets/Beep_Low_10.mp3" type="audio/mpeg" />
@@ -57,10 +57,10 @@
 
       <!-- Main Menu Section -->
       <div class="header text-white mix-blend" id="page-header">
-        <h2 class="header-text">Home</h2>
-        <h2 class="header-text">About</h2>
-        <h2 class="header-text">Contact</h2>
-        <h2 class="header-text">Register</h2>
+        <a class="header-text"><i class="fa fa-home"></i><span class="tooltiptext">Event Page</span></a>
+        <a class="header-text"><i class="fa fa-info-circle"></i><span class="tooltiptext">About</span></a>
+        <a class="header-text"><i class="fa fa-phone"></i><span class="tooltiptext">Contact</span></a>
+        <a class="header-text"><i class="fa fa-user-plus"></i><span class="tooltiptext">Register</span></a>
       </div>
       <!-- End Main Menu Section -->
 
@@ -83,9 +83,7 @@
             </div>
             <h1>Register Now</h1>
             <p>Hurry up before its too late get yourself registered now!</p>
-            <a href="#">
-              <div class="button button3">Register</div>
-            </a>
+            <button class="button button3">Register</button>
           </div>
         </div>
       </section>
@@ -155,6 +153,16 @@
     </section>
     <!-- End Intro Section -->
 
+    <!-- Bottom bar -->
+    <div class="bottom-bar">
+      <div class="bottom-wrapper">
+        <a href="" class="item"><i class="fa fa-home"></i></a>
+        <a href="" class="item"><i class="fa fa-info-circle"></i></a>
+        <a href="" class="item"><i class="fa fa-phone"></i></a>
+        <a href="" class="item"><i class="fa fa-user-plus"></i></a>
+      </div>
+    </div>
+    <!-- End bottom bar  -->
     <!-- Register Now Section -->
     <section id="register-now-section">
       <div class="timer">
@@ -176,9 +184,7 @@
           </div>
           <h1>Register Now</h1>
           <p>Hurry up before its too late get yourself registered now!</p>
-          <a href="#">
-            <div class="button button3">Register</div>
-          </a>
+          <button class="button button3">Register</button>
         </div>
 
       </div>
