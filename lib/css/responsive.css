@@ -189,7 +189,7 @@
   #competition-mobile-section .image {
     margin-top: -10px;
     content: url("../../assets/mobile/competition.png");
-    padding: 20px 2px 0 2px;
+    padding: 20px 0 0 0px;
     width: 100%;
   }
   #swags-mobile-section {
@@ -221,9 +221,9 @@
   #awards-mobile-section .image {
     margin-top: -10px;
 
-    content: url("../../assets/mobile/laptop-showcase.png");
-    padding: 20px 2px;
-    width: 90%;
+    content: url("../../assets/mobile/awards.png");
+    padding: 0px 0px;
+    width: 100%;
   }
 
   #register-now-section {
