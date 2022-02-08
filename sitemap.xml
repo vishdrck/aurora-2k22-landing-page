@@ -1,0 +1,22 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://aurora-scs.tech/</loc>
+        <lastmod>2022-02-08T21:48:43+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://aurora-scs.tech/event/about/</loc>
+        <lastmod>2022-02-08T21:48:43+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://aurora-scs.tech/event/contact/</loc>
+        <lastmod>2022-02-08T21:48:43+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://aurora-scs.tech/event/register/</loc>
+        <lastmod>2022-02-08T21:48:43+00:00</lastmod>
+    </url>
+    <url>
+        <loc>https://aurora-scs.tech/scs/</loc>
+        <lastmod>2022-02-08T21:48:43+00:00</lastmod>
+    </url>
+</urlset>
