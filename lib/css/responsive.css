@@ -255,4 +255,15 @@
   h1 {
     text-transform: uppercase;
   }
+
+  .music-mobile {
+    top: 3%;
+    left: 83%;
+    z-index: 999999;
+  }
+
+  .music-mobile:hover {
+    cursor: pointer;
+    background-color: #464646a8;
+  }
 }
