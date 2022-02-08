@@ -143,14 +143,13 @@
     z-index: 9999;
   }
   .mobile-section-wrapper {
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.3);
+    height: auto;
     /* box-shadow: 0px 0px 98px -21px rgba(0, 0, 0, 0.42) inset;
     -webkit-box-shadow: 0px 0px 98px -21px rgba(0, 0, 0, 0.42) inset;
     -moz-box-shadow: 0px 0px 98px -21px rgba(0, 0, 0, 0.42) inset; */
-    display:flex;
-    flex-direction:column;
-    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .mobile-section-wrapper h1 {
@@ -158,65 +157,73 @@
     text-align: center;
     font-weight: 900;
     color: rgb(0, 0, 0);
-    background-color:rgba(0, 0, 0, 0.1);
     /* margin: 10px; */
     padding: 30px 15px;
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.84);
   }
 
-  .mobile-section-wrapper h2 {
+  #laptop-show-case-mobile-section {
+    background-color: white;
+    /* position: absolute; */
+  }
+  #laptop-show-case-mobile-section .image {
+    margin-top: -10px;
+    content: url("../../assets/mobile/laptop-showcase.png");
+    padding: 20px 2px;
+    width: 90%;
+  }
+
+  #conference-mobile-section {
+    background-color: black;
+  }
+  #conference-mobile-section h1 {
+    color: white;
+  }
+  #conference-mobile-section .image {
+    margin-top: -10px;
+    content: url("../../assets/mobile/conference.png");
+    padding: 20px 2px 0 2px;
+    width: 100%;
+  }
+
+  #competition-mobile-section .image {
+    margin-top: -10px;
+    content: url("../../assets/mobile/competition.png");
+    padding: 20px 2px 0 2px;
+    width: 100%;
+  }
+  #swags-mobile-section {
+    background-color: black;
+  }
+
+  #swags-mobile-section h1 {
+    color: white;
+  }
+
+  #swags-mobile-section h2 {
+    margin-left: -67px;
+
     font-size: 18px;
     font-weight: 400;
     color: white;
-    margin-left: 70px;
-
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.84);
+    z-index: 99999
   }
-
-  #laptop-show-case-mobile-section {
-    /* position: absolute; */
-
-  }
-#laptop-show-case-mobile-section .image{
+  #swags-mobile-section .image {
     margin-top: -10px;
-    /* background-color: black; */
+
+    content: url("../../assets/mobile/swags.png");
+    /* padding: 20px 2px; */
+    width: 100%;
+    margin-top: -100px;
+  }
+
+  #awards-mobile-section .image {
+    margin-top: -10px;
+
     content: url("../../assets/mobile/laptop-showcase.png");
-    position:relative;
-}
-  #conference-mobile-section {
-    margin-top: -10px;
-    background-color: black;
-    background-image: url("../../assets/mobile/conference.png");
-    min-height: 500px;
-    background-size: cover;
-    background-position: 80% 50%;
-  }
-
-  #competition-mobile-section {
-    margin-top: -10px;
-    background-color: rgb(255, 255, 255);
-    background-image: url("../../assets/mobile/competition.png");
-    min-height: 500px;
-    background-size: cover;
-    background-position: 20% 50%;
-  }
-
-  #swags-mobile-section {
-    margin-top: -10px;
-    background-color: black;
-    background-image: url("../../assets/mobile/swags.png");
-    min-height: 500px;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-
-  #awards-mobile-section {
-    margin-top: -10px;
-    background-color: black;
-    background-image: url("../../assets/mobile/laptop-showcase.png");
-    min-height: 500px;
-    background-size: cover;
-    background-position: 80% 50%;
+    padding: 20px 2px;
+    width: 90%;
   }
 
   #register-now-section {

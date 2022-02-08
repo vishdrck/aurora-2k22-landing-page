@@ -394,10 +394,11 @@ li span {
 
 .footer .widget-3 {
   text-align: center;
+  margin-bottom: 70px;
 }
 
 .footer .follow-links {
-  margin-top: 40px;
+  margin-top: 15px;
   margin-bottom: 20px;
 }
 .footer .follow-links a {
