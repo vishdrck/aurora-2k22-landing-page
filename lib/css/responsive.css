@@ -70,7 +70,7 @@
     font-size: 40px;
   }
 
-  .tooltiptext{
+  .tooltiptext {
     display: none;
   }
 }
@@ -145,18 +145,22 @@
   .mobile-section-wrapper {
     height: 500px;
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 98px -21px rgba(0, 0, 0, 0.42) inset;
+    /* box-shadow: 0px 0px 98px -21px rgba(0, 0, 0, 0.42) inset;
     -webkit-box-shadow: 0px 0px 98px -21px rgba(0, 0, 0, 0.42) inset;
-    -moz-box-shadow: 0px 0px 98px -21px rgba(0, 0, 0, 0.42) inset;
+    -moz-box-shadow: 0px 0px 98px -21px rgba(0, 0, 0, 0.42) inset; */
+    display:flex;
+    flex-direction:column;
+    background-color:white;
   }
 
   .mobile-section-wrapper h1 {
-    font-size: 48px;
+    font-size: 25px;
     text-align: center;
     font-weight: 900;
-    color: white;
-    margin: 10px;
-    padding: 55px;
+    color: rgb(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0.1);
+    /* margin: 10px; */
+    padding: 30px 15px;
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.84);
   }
 
@@ -170,14 +174,15 @@
   }
 
   #laptop-show-case-mobile-section {
-    margin-top: -10px;
-    background-color: black;
-    background-image: url("../../assets/mobile/laptop-showcase.png");
-    min-height: 500px;
-    background-size: cover;
-    background-position: 80% 50%;
-  }
+    /* position: absolute; */
 
+  }
+#laptop-show-case-mobile-section .image{
+    margin-top: -10px;
+    /* background-color: black; */
+    content: url("../../assets/mobile/laptop-showcase.png");
+    position:relative;
+}
   #conference-mobile-section {
     margin-top: -10px;
     background-color: black;
@@ -220,18 +225,24 @@
 
   .bottom-bar {
     text-align: center;
-    position:fixed;
+    position: fixed;
     bottom: 0;
-width:100%;
-    background-color: rgb(0, 0, 0);
-     backdrop-filter: blur(10px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(2px);
+    z-index: 999999999999999999999999999;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
-  .bottom-wrapper i{
-color:white;
-padding:20px 20px;
-font-size:25px;
+  .bottom-wrapper i {
+    color: white;
+    padding: 20px 20px;
+    font-size: 25px;
   }
   .bottom-wrapper .item {
+  }
 
+  h1 {
+    text-transform: uppercase;
   }
 }
