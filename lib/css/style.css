@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: sans-serif;
-  overflow-x: hidden !important;
+  overflow: hidden;
   background: white;
 }
 
@@ -232,9 +232,18 @@ body {
   display: flex;
   justify-content: center;
   visibility: hidden;
+  text-transform: uppercase;
 }
 .mix-blend {
   mix-blend-mode: difference;
+}
+
+.header h2 {
+  transition: 0.1s ease-in-out;
+}
+.header h2:hover {
+  cursor: pointer;
+  color: #0084ff;
 }
 
 .header-text {
@@ -307,7 +316,6 @@ li span {
   display: block;
   font-size: 2.5rem;
 }
-
 
 /* Footer */
 .footer {
